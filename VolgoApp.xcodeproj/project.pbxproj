@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		24310FAA24D7E49200A1ACF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24310FA924D7E49200A1ACF2 /* AppDelegate.swift */; };
 		24310FAC24D7E49200A1ACF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24310FAB24D7E49200A1ACF2 /* SceneDelegate.swift */; };
-		24310FAE24D7E49200A1ACF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24310FAD24D7E49200A1ACF2 /* ViewController.swift */; };
 		24310FB124D7E49200A1ACF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24310FAF24D7E49200A1ACF2 /* Main.storyboard */; };
 		24310FB424D7E49200A1ACF2 /* VolgoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24310FB224D7E49200A1ACF2 /* VolgoApp.xcdatamodeld */; };
 		24310FB624D7E49300A1ACF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24310FB524D7E49300A1ACF2 /* Assets.xcassets */; };
 		24310FB924D7E49300A1ACF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24310FB724D7E49300A1ACF2 /* LaunchScreen.storyboard */; };
 		24310FC424D7E49400A1ACF2 /* VolgoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24310FC324D7E49400A1ACF2 /* VolgoAppTests.swift */; };
 		24310FCF24D7E49400A1ACF2 /* VolgoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24310FCE24D7E49400A1ACF2 /* VolgoAppUITests.swift */; };
+		243BF0DF24D9C60C00D7050C /* SetNewGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243BF0DE24D9C60C00D7050C /* SetNewGoalVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		24310FA624D7E49200A1ACF2 /* VolgoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolgoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24310FA924D7E49200A1ACF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24310FAB24D7E49200A1ACF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		24310FAD24D7E49200A1ACF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		24310FB024D7E49200A1ACF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24310FB324D7E49200A1ACF2 /* VolgoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VolgoApp.xcdatamodel; sourceTree = "<group>"; };
 		24310FB524D7E49300A1ACF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		24310FCA24D7E49400A1ACF2 /* VolgoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolgoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24310FCE24D7E49400A1ACF2 /* VolgoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolgoAppUITests.swift; sourceTree = "<group>"; };
 		24310FD024D7E49400A1ACF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		243BF0DE24D9C60C00D7050C /* SetNewGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewGoalVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +101,10 @@
 		24310FA824D7E49200A1ACF2 /* VolgoApp */ = {
 			isa = PBXGroup;
 			children = (
+				243BF0DD24D9C5EE00D7050C /* Controllers */,
 				24310FA924D7E49200A1ACF2 /* AppDelegate.swift */,
 				24310FAB24D7E49200A1ACF2 /* SceneDelegate.swift */,
-				24310FAD24D7E49200A1ACF2 /* ViewController.swift */,
-				24310FAF24D7E49200A1ACF2 /* Main.storyboard */,
+				24D1731A24DDB09C005F540C /* View */,
 				24310FB524D7E49300A1ACF2 /* Assets.xcassets */,
 				24310FB724D7E49300A1ACF2 /* LaunchScreen.storyboard */,
 				24310FBA24D7E49300A1ACF2 /* Info.plist */,
@@ -129,6 +129,22 @@
 				24310FD024D7E49400A1ACF2 /* Info.plist */,
 			);
 			path = VolgoAppUITests;
+			sourceTree = "<group>";
+		};
+		243BF0DD24D9C5EE00D7050C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				243BF0DE24D9C60C00D7050C /* SetNewGoalVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		24D1731A24DDB09C005F540C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24310FAF24D7E49200A1ACF2 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24310FAE24D7E49200A1ACF2 /* ViewController.swift in Sources */,
 				24310FB424D7E49200A1ACF2 /* VolgoApp.xcdatamodeld in Sources */,
 				24310FAA24D7E49200A1ACF2 /* AppDelegate.swift in Sources */,
 				24310FAC24D7E49200A1ACF2 /* SceneDelegate.swift in Sources */,
+				243BF0DF24D9C60C00D7050C /* SetNewGoalVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
